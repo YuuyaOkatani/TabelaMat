@@ -15,64 +15,43 @@
                 </div>
                 
                 <div>
-                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var1">
+                    <input id="input1" placeholder="Digite 0 ou 1"  [(ngModel)]="var1">
                 </div>
-                <div>
-                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var1">
-                </div>
-                <div>
-                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var1">
-                </div>
-                <div>
-                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var1">
-                </div>
+               
              
             </div>
-            <div>
-                <select class="form-select" aria-label="Escolha uma condição" [(ngModel)]="selected">
-                    <option *ngFor="let n of array">{{n}}</option>
-                   
-                   
-                </select>
-            </div>
+            
+           
 
             <div>
                 <div>
                     <label class="label">q</label>
                 </div>
                 <div>
-                    <input id="input1" placeholder="Digite qualquer coisa" [value]="var2">
-                </div>
-                <div>
-                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var2">
-                </div>
-                <div>
-                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var2">
-                </div>
-                <div>
-                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var2">
-                </div>
+                    <input id="input1" placeholder="Digite 0 ou 1" [(ngModel)]="var2">
+                </div>  
+                
+               
              
             </div>
             <div>
                 <div>
-                    <label class="label">p {{selected}} q</label>
+                    <label class="label">p ∧ q</label>
                 </div>
                 <div>
                     <input id="input1" [placeholder]="resultado" disabled>
                 </div>
                 <div>
-                    <input id="input1" [placeholder]="resultado" disabled>
-                </div>
-                <div>
-                    <input id="input1" [placeholder]="resultado" disabled>
-                </div>
-                <div>
-                    <input id="input1" [placeholder]="resultado" disabled>
+                    <button type="button" class="btn btn-info bt" (click)="conjuncao()">Confirmar</button>
+    
                 </div>
              
+              
+             
             </div>
-            <button (click)="conjuncao()"></button>
+            
+            
+            
             
             
         </div>
