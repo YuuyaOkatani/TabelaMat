@@ -11,49 +11,68 @@
         <div id="component2" [ngClass]="{'transition1': togglar , 'tranisition2' : !togglar}">
             <div>
                 <div>
-                    <input id="input1" placeholder="Digite qualquer coisa">
+                    <label class="label">p</label>
+                </div>
+                
+                <div>
+                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var1">
                 </div>
                 <div>
-                    <input id="input1" placeholder="Digite qualquer coisa">
+                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var1">
                 </div>
                 <div>
-                    <input id="input1" placeholder="Digite qualquer coisa">
+                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var1">
                 </div>
                 <div>
-                    <input id="input1" placeholder="Digite qualquer coisa">
+                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var1">
+                </div>
+             
+            </div>
+            <div>
+                <select class="form-select" aria-label="Escolha uma condição" [(ngModel)]="selected">
+                    <option *ngFor="let n of array">{{n}}</option>
+                   
+                   
+                </select>
+            </div>
+
+            <div>
+                <div>
+                    <label class="label">q</label>
+                </div>
+                <div>
+                    <input id="input1" placeholder="Digite qualquer coisa" [value]="var2">
+                </div>
+                <div>
+                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var2">
+                </div>
+                <div>
+                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var2">
+                </div>
+                <div>
+                    <input id="input1" placeholder="Digite qualquer coisa"  [value]="var2">
                 </div>
              
             </div>
             <div>
                 <div>
-                    <input id="input1" placeholder="Digite qualquer coisa">
+                    <label class="label">p {{selected}} q</label>
                 </div>
                 <div>
-                    <input id="input1" placeholder="Digite qualquer coisa">
+                    <input id="input1" [placeholder]="resultado" disabled>
                 </div>
                 <div>
-                    <input id="input1" placeholder="Digite qualquer coisa">
+                    <input id="input1" [placeholder]="resultado" disabled>
                 </div>
                 <div>
-                    <input id="input1" placeholder="Digite qualquer coisa">
+                    <input id="input1" [placeholder]="resultado" disabled>
+                </div>
+                <div>
+                    <input id="input1" [placeholder]="resultado" disabled>
                 </div>
              
             </div>
-            <div>
-                <div>
-                    <input id="input1" placeholder="Resultado" disabled>
-                </div>
-                <div>
-                    <input id="input1" placeholder="Resultado" disabled>
-                </div>
-                <div>
-                    <input id="input1" placeholder="Resultado" disabled>
-                </div>
-                <div>
-                    <input id="input1" placeholder="Resultado" disabled>
-                </div>
-             
-            </div>
+            <button (click)="conjuncao()"></button>
             
             
         </div>

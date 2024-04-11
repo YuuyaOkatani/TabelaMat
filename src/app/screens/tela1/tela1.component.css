@@ -37,6 +37,16 @@
     transition: 0.4 ease;
 }
 
+.label{
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(125, 195, 252);
+
+    text-align: center;
+}
+
 #input1{
     height:auto; 
     width: 250px;
@@ -44,3 +54,4 @@
     margin: 10px;
     background-color: white;
 }
+

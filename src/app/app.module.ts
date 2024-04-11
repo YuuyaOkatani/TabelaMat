@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Tela1Component } from '../app/screens/tela1/tela1.component';
 import { Tela2Component } from '../app/screens/tela2/tela2.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     Tela2Component
   ],
   imports: [
+    FormsModule, 
     BrowserModule,
     AppRoutingModule,
     NgbModule,
