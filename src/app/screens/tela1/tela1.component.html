@@ -8,9 +8,18 @@
 </head>
 <body>
     <div class="component">
-        <div class="component2">
+        <div id="component2" [ngClass]="{'transition1': togglar , 'tranisition2' : !togglar}">
+            <div>
+                <input id="input1" placeholder="Digite qualquer coisa">
+                <input id="input1" placeholder="Digite qualquer coisa">
+                <input id="input1" placeholder="Digite qualquer coisa">
+                <input id="input1" placeholder="Digite qualquer coisa">
+            </div>
+            
             
         </div>
+        <button type="button" class="btn btn-success" (click)="apertar()">Success</button>
+
     </div>
     
 </body>

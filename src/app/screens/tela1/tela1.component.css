@@ -11,13 +11,33 @@
 
 }
 
-.component2{
+#component2{
 
 
     border-radius: 10px;
     height: 400px;
     width: 900px;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center; 
     background-color: rgb(4, 158, 197);
     position: fixed;
+    top: 100%;
+    
+
+}
+
+.transition1{
+    transform: translateY(-700px);
+    transition: 1s ease;
+}
+
+.transition2{
+    transform: translateY(700px);
+    transition: 0.4 ease;
+}
+
+#input1{
+    height:50px; 
+    width: 100px;
+    border-radius: 10px;
 }

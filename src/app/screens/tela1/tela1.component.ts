@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './tela1.component.css'
 })
 export class Tela1Component {
+  togglar = false; 
+  apertar(){
+    this.togglar = !this.togglar;
+
+  }
 
 }
