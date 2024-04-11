@@ -1,0 +1,23 @@
+.component{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(102, 101, 101);
+    display: flex;
+
+}
+
+.component2{
+
+
+    border-radius: 10px;
+    height: 400px;
+    width: 900px;
+    justify-content: center; 
+    background-color: rgb(4, 158, 197);
+    position: fixed;
+}
