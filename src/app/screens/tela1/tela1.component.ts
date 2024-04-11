@@ -10,6 +10,7 @@ export class Tela1Component {
   var1 = 0;
   var2 = 0;
   resultado = ''; 
+  condicao = ''
   selected : string =  ''; 
 
   array = ['∧' , '∨']
@@ -24,6 +25,8 @@ export class Tela1Component {
   
 
   conjuncao(){
+
+    this.condicao = '∧'
     if(this.var1 == 0 && this.var2 == 0){
       this.resultado = 'F'
 
@@ -43,6 +46,21 @@ export class Tela1Component {
 
     }
 
+  }
+
+  dijuncao(){
+
+    this.condicao = '∨'
+
+    
+    
+    if (this.var1 == 1 || this.var2 == 1){
+      this.resultado = 'V'
+    }
+    else{
+      this.resultado = 'F'
+
+    }
   }
 
 

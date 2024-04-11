@@ -14,8 +14,14 @@
                     <label class="label">p</label>
                 </div>
                 
+                
                 <div>
                     <input id="input1" placeholder="Digite 0 ou 1"  [(ngModel)]="var1">
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-info bt" (click)="conjuncao()">conjuncao</button>
+    
                 </div>
                
              
@@ -30,21 +36,23 @@
                 <div>
                     <input id="input1" placeholder="Digite 0 ou 1" [(ngModel)]="var2">
                 </div>  
+                <div>
+                    <button type="button" class="btn btn-info bt" (click)="dijuncao()">dijuncao</button>
+    
+                </div>
                 
                
              
             </div>
             <div>
                 <div>
-                    <label class="label">p ∧ q</label>
+                    <label class="label">p {{condicao}} q</label>
                 </div>
                 <div>
                     <input id="input1" [placeholder]="resultado" disabled>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-info bt" (click)="conjuncao()">Confirmar</button>
-    
-                </div>
+                
+               
              
               
              

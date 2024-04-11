@@ -44,6 +44,7 @@
     margin: 10px;
     background-color: rgb(125, 195, 252);
 
+
     text-align: center;
 }
 
@@ -52,12 +53,15 @@
     width: 250px;
     border-radius: 10px;
     margin: 10px;
+    margin-bottom: 20px;
     background-color: white;
 }
 .bt{
     margin-top: 20px;
+    margin-left: 10px;
+    position: fixed;
     
 
-    position: fixed;
+    
 }
 
