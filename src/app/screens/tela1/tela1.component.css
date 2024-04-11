@@ -17,6 +17,7 @@
     border-radius: 10px;
     height: 400px;
     width: 900px;
+    display: flex;
     justify-content: center;
     align-items: center; 
     background-color: rgb(4, 158, 197);
@@ -37,7 +38,9 @@
 }
 
 #input1{
-    height:50px; 
-    width: 100px;
+    height:auto; 
+    width: 250px;
     border-radius: 10px;
+    margin: 10px;
+    background-color: white;
 }

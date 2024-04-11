@@ -12,4 +12,6 @@ export class Tela1Component {
 
   }
 
+  
+
 }
